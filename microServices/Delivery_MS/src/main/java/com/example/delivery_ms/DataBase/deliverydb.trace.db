@@ -1,0 +1,19 @@
+2024-06-09 17:50:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'CIN1' (COURIER: ""CIN"" BIGINT NOT NULL)"
+Data conversion error converting "'CIN1' (COURIER: ""CIN"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO courier (CIN, FIRST_NAME, IS_AVAILABLE, LAST_NAME, PHONE_NUMBER) 
+VALUES ('CIN1', 'John', true, 'Doe', '1234567890') [22018-214]
+2024-06-09 17:50:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'CIN2' (COURIER: ""CIN"" BIGINT NOT NULL)"
+Data conversion error converting "'CIN2' (COURIER: ""CIN"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO courier (CIN, FIRST_NAME, IS_AVAILABLE, LAST_NAME, PHONE_NUMBER) 
+VALUES ('CIN2', 'Jane', false, 'Smith', '9876543210') [22018-214]
+2024-06-09 17:50:52 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Erreur lors de la conversion de données "'CIN3' (COURIER: ""CIN"" BIGINT NOT NULL)"
+Data conversion error converting "'CIN3' (COURIER: ""CIN"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO courier (CIN, FIRST_NAME, IS_AVAILABLE, LAST_NAME, PHONE_NUMBER) 
+VALUES ('CIN3', 'Alice', true, 'Johnson', '5555555555') [22018-214]
+2024-06-09 17:51:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]COURIER"; attendu "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"
+Syntax error in SQL statement "[*]COURIER"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+COURIER [42001-214]
